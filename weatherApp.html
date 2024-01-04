@@ -1,0 +1,195 @@
+<!-- weather App by javasript ! ! ! -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather App Java-script !</title>
+  <link rel="stylesheet" href="weatherApp.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+</head>
+<body>
+ <div class="weather-main"> 
+  <div class="headline">javasript weather App </div>
+  
+  <div class="main"> 
+    <div class="nav-coloum">
+       <div class="inner-nav">
+        <div class="toggle">
+          <div class="inner-toggle"> 
+                   
+          </div>
+        </div>
+      <!-- social -->
+      <div class="social"><i class="fa-regular fa-envelope" style="color: rgb(88, 82, 82);"></i></div>
+      <div class="social"><i class="fa-brands fa-facebook"  style="color: rgb(88, 82, 82);"></i></div>
+      <div class="social"><i class="fa-brands fa-instagram" style="color: rgb(88, 82, 82);"></i></div>
+       </div>
+    </div>  
+
+  <!-- inner main -->
+<div class="inner-main"> 
+   <div class="inner-main-left"> 
+         <div class="weather-content"> 
+           <div class="location"> 
+              <h1 id="country">area Name:</h1>
+              <p class="city"></p>
+           </div>  
+          <div class="temp-info">
+              <div class="animatedCloud"> 
+                    <img class="sunCloud" src="weatherApp Png.png"  draggable="false">
+              </div>
+              <div class="todays-weather">
+                  
+                    <h1 class="inner-temp">??</h1>
+                  
+                  <h2 id="tempText">todays weather </h2>
+              </div>
+              <div class="animatedCloud-coloum">
+                <img  id="rainyCloud" src="wehather2.png"  draggable="false"> 
+              </div>
+          </div>
+         </div>
+   
+
+
+         <div class="temp-detail"> 
+            <div class="temp-header"> 
+              <img  id="snowCaps" src="snowCaps2.png" draggable="false">  
+             <h3 id="forcast"> today's forcast</h3>
+            </div>
+            <div class="ice-effect"> 
+              <img id="waterDrops" src="water drops.png" draggable="false">
+              <img id="waterDrops" src="water drops.png" draggable="false"> 
+              <img id="waterDrops" src="water drops.png" draggable="false"> 
+             </div>
+            <div class="detail-container"> 
+              <div class="inner-temp-info">
+                  <div class="times-info"><p class="time">11:00am</p></div>
+                  <div class="weather-icon"><img  id="sun" src="sun.png"></div>
+                  <div class="temperatures">30º</div>
+              </div>
+
+
+              
+
+              <div class="inner-temp-info">
+                <div class="times-info"><p class="time">12:00pm</p></div>
+                <div class="weather-icon"><img  id="sun" src="sun.png"></div>
+                <div class="temperatures">28º</div>
+            </div>
+
+
+
+               <div class="inner-temp-info">
+                  <div class="times-info"><p class="time">03:00pm</p></div>
+                  <div class="weather-icon"><img  id="sun" src="sun.png"></div>
+                  <div class="temperatures">34º</div>
+              </div>
+
+
+                <div class="inner-temp-info">
+                  <div class="times-info"><p class="time">06:00pm</p></div>
+                  <div class="weather-icon"><img  id="sun" src="moon.png"></div>
+                  <div class="temperatures">22º</div>
+              </div>
+            </div>
+         </div>
+        
+
+
+
+
+
+
+   <div class="weather-info"> 
+   <div class="weather-inner-info"> 
+  
+
+
+       <div class="row1"> 
+        <div class="items"> 
+            <div class="item-left">
+              <i id="tempIcon" class="fa-solid fa-temperature-low" style="color: rgba(175, 172, 172, 0.808);"></i>
+            </div>
+            <div class="item-right"> 
+              <div class="item-head">humidity</div>
+              <div class="item-con"><h1 id="realFeel" class="conditions" >26.54</h1></div>
+            </div>
+        </div>
+
+
+        <div class="items"> 
+          <div class="item-left">
+            <i id="tempIcon" class="fa-solid fa-wind" style="color: rgba(175, 172, 172, 0.808);"></i>
+          </div>
+          <div class="item-right"> 
+            <div class="item-head">pressure </div>
+            <div class="item-con"><h1 id="windSpeed" class="conditions">??</h1></div>
+          </div>
+      </div>
+       </div>
+
+
+       <div class="row1"> 
+        <div class="items"> 
+          <div class="item-left">
+            <i id="dropIcon" class="fa-solid fa-droplet" style="color: rgba(175, 172, 172, 0.808);"></i>
+          </div>
+          <div class="item-right"> 
+            <div class="item-head">weather conditions </div>
+            <div class="item-con"><h1 id="conditions"  class="conditions">clear</h1></div>
+          </div>
+      </div>
+  
+
+      <div class="items"> 
+        <div class="item-left">
+          <i id="globeIcon" class="fa-solid fa-globe" style="color: rgba(175, 172, 172, 0.808);"></i>
+        </div>
+        <div class="item-right">
+          <div class="item-head">made in: <img id="flags" src="https://flagsapi.com/BD/shiny/64.png">
+
+          <div class="item-con"><h1 id="countryName"  class="conditions" >bangladesh</h1></div>
+        </div>
+    </div>
+       </div>
+       </div>
+   </div>
+
+
+
+
+ 
+
+
+  </div>
+</div>
+
+
+<div class="inner-main-right"> 
+   <img id="snowMan" src="snowMan.png"  draggable="false">
+    <div class="searchWeather">
+      <div class="search-header">
+          <h1>Winter Season</h1>
+         <h5  style="text-align: center;">developed by Ilham hossain  </h5>
+      </div>
+      <div class="inner-search-bar">
+        <input type="text" class="searchBar" placeholder="enter your current location" required> 
+        <img id="searchIcon" src="magnifying-glass-weather-report-icon-symbols-search-discovery-cloud-research-analysis-concept-3d-vector-isolated-illustration-design-cartoon-pastel-minimal-style-design-ux-ui-print-ad_734013-267.png">
+      </div>
+    </div>
+  <div class="snowMan-con">
+    <img  id="snowLand" src="Snow-PNG-364x205-removebg-preview.png" draggable="false">
+      <img  id="snowBoy" src="snowBoy.png" draggable="false">
+  </div>
+</div>
+
+
+
+  </div>
+</div>
+<script src="weatherApp.js"></script>
+</body>
+</html>
